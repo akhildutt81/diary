@@ -1,0 +1,27 @@
+.navbar{
+	width: 15%;
+	height: 100%;
+	position: fixed;
+	border-right: 1px solid grey;
+}
+a:visited{
+	color:black;
+}
+.item:hover{
+	background-color:red;
+	cursor: pointer;
+}
+.item{
+	border: 1px solid black;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	display: block;
+	word-wrap: break-word;
+}
+.ee{
+	border: 1px solid black;
+	display: inline-block;
+	margin-top: 5%;
+	margin-left: 16%
+}
