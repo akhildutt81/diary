@@ -1,0 +1,4 @@
+.days{
+	display:flex;
+	flex-direction: row;
+}

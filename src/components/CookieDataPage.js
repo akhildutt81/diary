@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import {yo} from '../utils.js';
 class CookieDataPage extends React.Component{
     constructor(props){
         super(props);
@@ -9,7 +10,6 @@ class CookieDataPage extends React.Component{
     }
     getvaliditystatus=()=>{
         let str=this.props.cookies.get('token')
-        console.log(str)
         axios.post('http://localhost:3000/isvalid',{
             "token":str
         }).then((data)=>{
@@ -19,14 +19,13 @@ class CookieDataPage extends React.Component{
         })
     }
     render=()=>{
-        console.log("render",this.props.cookies.get('token'))
         if(this.state.validity===""){
             this.getvaliditystatus();
         }
         return (
             <div>
                 Cdp
-                {this.state['validity']}
+                {this.state['validity'].toString()}
             </div>
         )
     }

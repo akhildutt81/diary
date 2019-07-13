@@ -1,7 +1,7 @@
 .navbar{
 	width: 15%;
 	height: 100%;
-	position: fixed;
+	position: absolute;
 	border-right: 1px solid grey;
 }
 a:visited{
@@ -19,9 +19,6 @@ a:visited{
 	display: block;
 	word-wrap: break-word;
 }
-.ee{
-	border: 1px solid black;
-	display: inline-block;
-	margin-top: 5%;
-	margin-left: 16%
+h4{
+	word-wrap: break-word;
 }

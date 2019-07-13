@@ -1,0 +1,38 @@
+
+.item{
+	word-wrap:break-word;
+	flex-direction: column;
+	padding:7%;
+	border-bottom:1px solid #3a4248;
+}
+
+.item1{
+	flex-direction: column;
+}
+.flexitem1{
+	display: inline-flex;
+	position: fixed;
+	width:15%;
+	max-width: 20%;
+	height: 100%;
+	left:0;
+	background-color: #DCDCDC	;
+}
+.flexitem2{
+	margin-left: 20%;
+	display: inline-flex;
+	position: relative;
+}
+.item2{
+	border-bottom:1px solid #3a4248;
+	padding: 7%;
+	word-wrap: break-word;
+}
+.item2:hover{
+	cursor: pointer;
+	background-color: #39beed;
+}
+.item:hover{
+	cursor: pointer;
+	background-color: #39beed;
+}

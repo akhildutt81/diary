@@ -15,7 +15,6 @@ class SignUp extends React.Component{
             username:this.state.username,
             password:this.state.password,
         }).then((data)=>{
-            console.log("signup"+data.data)
             let tok=data.data['token']
             this.props.cookies.set("token",tok,{
                 "maxAge":75

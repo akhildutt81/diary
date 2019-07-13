@@ -18,7 +18,7 @@ class LogIn extends React.Component{
             let tok=data.data['token']
             if (tok!==null){
                 this.props.cookies.set("token",tok,{
-                    "maxAge":75
+                    "maxAge":6000
                 })
                 this.props.changeToken(tok);
             }
